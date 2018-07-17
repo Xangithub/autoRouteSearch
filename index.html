@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Определение пути автомобиля</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <script src="https://api-maps.yandex.ru/2.1/?lang=ru_RU" type="text/javascript"></script>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <div id="map" style="width:1280px; height:650px"></div>
+
+    <div class="content">
+
+        <div id="coorform">
+            <form id="search_route" name="forma">
+                <b>Стартовая точка: </b>
+                <input id="start" name="start_point" type="text" value="Москва" class="name" required><br />
+                <b>Точка 2: </b>(необязательна)
+                <input id="point2" name="point2" type="text" value="Тверь" class="name"><br />
+                <b>Точка 3: </b>(необязательна)
+                <input id="point3" name="point3" type="text" value="Санкт-Петербург" class="name"><br />
+                <b>Финиш:</b>
+                <input id="end" name="end_point" type="text" value="Сертолово" class="name" required>
+                <input id="btn" type="button" value="Найти" class="test btn" />
+            </form>
+        </div>
+        <div style="margin-left: 50px">
+            <div id="geninfo" class="report">
+
+            </div>
+            <hr>
+            <div id="coorinfo" class="report">
+
+            </div>
+        </div>
+    </div>
+    <script src="main.js" type="text/javascript"></script>
+</body>
+
+</html>
